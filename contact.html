@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Cinder Axis Living</title>
+  <meta name="description" content="Get in touch with Cinder Axis Living. Editorial inquiries, partnerships, and general questions about interior design and architecture." />
+  <meta name="author" content="Cinder Axis Living" />
+  <link rel="canonical" href="https://cinderaxisliving.com/contact.html" />
+  <meta property="og:title" content="Contact — Cinder Axis Living" />
+  <meta property="og:description" content="Reach the editorial team at Cinder Axis Living." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cinderaxisliving.com/contact.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background-color: #faf9f7;
+      color: #1e1e1e;
+      line-height: 1.6;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #a65e3a;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      color: #222;
+    }
+    h1 {
+      font-size: 2.6rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.25rem;
+    }
+    p {
+      margin-bottom: 1.2rem;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: #faf9f7;
+      border-bottom: 1px solid #e3dfda;
+      padding: 1.5rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(6px);
+      background-color: rgba(250, 249, 247, 0.92);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #222;
+      line-height: 1.1;
+    }
+    .logo span {
+      color: #a65e3a;
+      font-style: italic;
+      font-weight: 400;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+    }
+    .nav-links a {
+      color: #3a3a3a;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .nav-links a:hover {
+      border-bottom-color: #a65e3a;
+      color: #a65e3a;
+    }
+    .search-btn {
+      background: none;
+      border: 1px solid #ccc5bd;
+      border-radius: 30px;
+      padding: 0.4rem 1.2rem;
+      font-size: 0.85rem;
+      color: #3a3a3a;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: 'Inter', sans-serif;
+    }
+    .search-btn:hover {
+      background: #eeeae5;
+      border-color: #a65e3a;
+    }
+    .search-bar {
+      display: none;
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.8rem 1.2rem;
+      border: 1px solid #ddd6cf;
+      border-radius: 40px;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      outline: none;
+    }
+    .search-bar.active {
+      display: block;
+    }
+    /* ---------- PAGE HEADER ---------- */
+    .page-header {
+      padding: 3rem 0 1.5rem;
+      text-align: center;
+    }
+    .page-header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.75rem;
+    }
+    .page-header p {
+      max-width: 620px;
+      margin: 0 auto;
+      color: #5a5a5a;
+      font-size: 1.15rem;
+    }
+    .page-header .accent-line {
+      width: 60px;
+      height: 3px;
+      background: #a65e3a;
+      margin: 1.5rem auto 0;
+    }
+    /* ---------- CONTACT LAYOUT ---------- */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3rem;
+      padding: 2.5rem 0 4rem;
+    }
+    /* Contact form */
+    .contact-form-card {
+      background: #fff;
+      border: 1px solid #ede8e3;
+      border-radius: 6px;
+      padding: 2.5rem 2.8rem;
+    }
+    .contact-form-card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .contact-form-card .subhead {
+      color: #5a5a5a;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #4a4a4a;
+      margin-bottom: 0.4rem;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.85rem 1.1rem;
+      border: 1px solid #ddd6cf;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      background: #faf9f7;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      color: #1e1e1e;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #a65e3a;
+      box-shadow: 0 0 0 3px rgba(166, 94, 58, 0.08);
+      background: #fff;
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+    .form-submit {
+      background: #a65e3a;
+      color: #fff;
+      border: none;
+      border-radius: 40px;
+      padding: 1rem 2.8rem;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-family: 'Inter', sans-serif;
+      letter-spacing: 0.02em;
+      margin-top: 0.5rem;
+    }
+    .form-submit:hover {
+      background: #8b4d2e;
+    }
+    .form-note {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 1rem;
+    }
+    /* Contact info sidebar */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+    .info-card {
+      background: #fff;
+      border: 1px solid #ede8e3;
+      border-radius: 6px;
+      padding: 1.8rem 1.8rem;
+    }
+    .info-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+    }
+    .info-card p {
+      font-size: 0.95rem;
+      color: #4a4a4a;
+      margin-bottom: 0.75rem;
+    }
+    .info-card .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+      color: #a65e3a;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    .info-card .value {
+      font-size: 1rem;
+      color: #1e1e1e;
+      font-weight: 500;
+    }
+    .info-card .value a {
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .info-card .value a:hover {
+      border-bottom-color: #a65e3a;
+    }
+    .info-card .divider {
+      height: 1px;
+      background: #ede8e3;
+      margin: 1.2rem 0;
+    }
+    .hours-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 1rem;
+      font-size: 0.9rem;
+      color: #4a4a4a;
+    }
+    .hours-grid .day {
+      font-weight: 500;
+      color: #1e1e1e;
+    }
+    /* Map placeholder */
+    .map-placeholder {
+      background: #eae5e0;
+      border-radius: 6px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #7a6e64;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      border: 1px solid #ddd6cf;
+      background-image: radial-gradient(circle at 30% 40%, #f5f2ef 0%, #eae5e0 80%);
+    }
+    /* ---------- FAQ (contact specific) ---------- */
+    .contact-faq {
+      margin: 2rem 0 3rem;
+      background: #fff;
+      border: 1px solid #ede8e3;
+      border-radius: 6px;
+      padding: 2.5rem 2.8rem;
+    }
+    .contact-faq h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+    .faq-item {
+      border-bottom: 1px solid #ede8e3;
+      padding: 1rem 0;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 1.05rem;
+      font-family: 'Playfair Display', serif;
+    }
+    .faq-question span {
+      font-size: 1.5rem;
+      color: #a65e3a;
+      transition: transform 0.2s;
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      color: #4a4a4a;
+      padding-right: 1.5rem;
+    }
+    .faq-answer.open {
+      max-height: 300px;
+      padding-top: 0.75rem;
+      padding-bottom: 0.5rem;
+    }
+    /* ---------- NEWSLETTER ---------- */
+    .newsletter-section {
+      background: #f2eeea;
+      border-radius: 6px;
+      padding: 3rem 2.5rem;
+      text-align: center;
+      margin: 2rem 0 3rem;
+    }
+    .newsletter-section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+    }
+    .newsletter-section p {
+      max-width: 550px;
+      margin: 0 auto 1.8rem;
+      color: #4a4a4a;
+    }
+    .newsletter-form {
+      display: flex;
+      max-width: 480px;
+      margin: 0 auto;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .newsletter-form input {
+      flex: 1;
+      min-width: 240px;
+      padding: 0.8rem 1.2rem;
+      border: 1px solid #ccc5bd;
+      border-radius: 40px;
+      font-size: 0.95rem;
+      font-family: 'Inter', sans-serif;
+      outline: none;
+      background: #fff;
+    }
+    .newsletter-form button {
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 40px;
+      background: #a65e3a;
+      color: #fff;
+      font-weight: 500;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-family: 'Inter', sans-serif;
+    }
+    .newsletter-form button:hover {
+      background: #8b4d2e;
+    }
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: #1e1e1e;
+      color: #cfcfcf;
+      padding: 3rem 0 2rem;
+      margin-top: 3rem;
+      border-top: 1px solid #333;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .footer-grid h5 {
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1.2rem;
+      font-weight: 600;
+    }
+    .footer-grid ul {
+      list-style: none;
+    }
+    .footer-grid li {
+      margin-bottom: 0.6rem;
+      font-size: 0.9rem;
+    }
+    .footer-grid a {
+      color: #b0b0b0;
+    }
+    .footer-grid a:hover {
+      color: #fff;
+    }
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .contact-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+      .page-header h1 {
+        font-size: 2.4rem;
+      }
+    }
+    @media (max-width: 820px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .contact-form-card {
+        padding: 1.8rem;
+      }
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .page-header h1 {
+        font-size: 2rem;
+      }
+    }
+    @media (max-width: 600px) {
+      .contact-form-card {
+        padding: 1.2rem;
+      }
+      .contact-faq {
+        padding: 1.5rem;
+      }
+      .newsletter-section {
+        padding: 2rem 1.2rem;
+      }
+      .logo {
+        font-size: 1.5rem;
+      }
+      .page-header h1 {
+        font-size: 1.8rem;
+      }
+      .info-card {
+        padding: 1.2rem;
+      }
+    }
+    .hidden {
+      display: none !important;
+    }
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="logo" aria-label="Cinder Axis Living">Cinder <span>Axis</span> Living</div>
+      <nav class="nav-links" aria-label="Main navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" style="border-bottom-color: #a65e3a; color: #a65e3a;">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </nav>
+      <button class="search-btn" id="searchToggle" aria-label="Toggle search">Search</button>
+    </div>
+    <div class="container">
+      <input type="text" class="search-bar" id="searchInput" placeholder="Search articles, topics, ideas…" aria-label="Search articles" />
+    </div>
+  </header>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <div class="page-header container">
+    <h1>Contact</h1>
+    <p>We welcome thoughtful questions, story pitches, and partnership inquiries. Our editorial team reads every message.</p>
+    <div class="accent-line"></div>
+  </div>
+
+  <!-- ========== CONTACT MAIN ========== -->
+  <main class="container contact-layout" role="main">
+
+    <!-- Contact Form -->
+    <section class="contact-form-card" aria-label="Contact form">
+      <h2>Send a message</h2>
+      <p class="subhead">We typically respond within 2–3 business days.</p>
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Jane" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected>Select a topic…</option>
+            <option value="editorial">Editorial inquiry / story pitch</option>
+            <option value="partnership">Partnership / advertising</option>
+            <option value="feedback">Feedback on an article</option>
+            <option value="contribute">Contributor guidelines</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send message</button>
+        <p class="form-note">By submitting, you agree to our privacy policy. We never share your details.</p>
+      </form>
+    </section>
+
+    <!-- Contact Info Sidebar -->
+    <aside class="contact-info" aria-label="Contact information">
+      <!-- Editorial -->
+      <div class="info-card">
+        <h3>Editorial</h3>
+        <span class="label">Pitches &amp; submissions</span>
+        <p class="value"><a href="mailto:editors@cinderaxisliving.com">editors@cinderaxisliving.com</a></p>
+        <div class="divider"></div>
+        <span class="label">General inquiries</span>
+        <p class="value"><a href="mailto:hello@cinderaxisliving.com">hello@cinderaxisliving.com</a></p>
+      </div>
+
+      <!-- Partnerships -->
+      <div class="info-card">
+        <h3>Partnerships</h3>
+        <span class="label">Advertising &amp; collaborations</span>
+        <p class="value"><a href="mailto:partners@cinderaxisliving.com">partners@cinderaxisliving.com</a></p>
+        <div class="divider"></div>
+        <p style="font-size: 0.9rem; color: #5a5a5a; margin-bottom: 0;">We work with a select group of brands that align with our editorial values. Please include a short overview of your project.</p>
+      </div>
+
+      <!-- Office & Hours -->
+      <div class="info-card">
+        <h3>Studio</h3>
+        <p style="font-size: 0.95rem; color: #4a4a4a; margin-bottom: 0.5rem;">
+          Cinder Axis Living<br />
+          48 Ashfield Lane, Studio 3<br />
+          London, E2 7DP<br />
+          United Kingdom
+        </p>
+        <div class="divider"></div>
+        <span class="label" style="margin-bottom: 0.5rem;">Office hours</span>
+        <div class="hours-grid">
+          <span class="day">Mon–Thu</span><span>9:00 – 18:00</span>
+          <span class="day">Friday</span><span>9:00 – 16:00</span>
+          <span class="day">Sat–Sun</span><span>Closed</span>
+        </div>
+      </div>
+
+      <!-- Map placeholder -->
+      <div class="map-placeholder" aria-label="Map placeholder">
+        📍 &nbsp;London studio — by appointment
+      </div>
+    </aside>
+  </main>
+
+  <!-- ========== CONTACT FAQ ========== -->
+  <section class="container contact-faq" aria-label="Contact frequently asked questions">
+    <h2>Before you write</h2>
+    <div class="faq-item">
+      <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+        How quickly do you respond to emails?
+        <span>+</span>
+      </div>
+      <div class="faq-answer">We aim to reply within 2–3 business days. For urgent editorial deadlines, please mark your subject line with “URGENT”.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+        Do you accept guest posts or sponsored content?
+        <span>+</span>
+      </div>
+      <div class="faq-answer">We occasionally accept carefully selected guest contributions. Sponsored content is clearly labelled and limited. Please contact <a href="mailto:partners@cinderaxisliving.com">partners@cinderaxisliving.com</a> for details.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+        Can I visit the studio?
+        <span>+</span>
+      </div>
+      <div class="faq-answer">Our London studio is open by appointment only. If you'd like to visit, please email us with a brief note about the purpose of your visit.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+        How do I pitch a story idea?
+        <span>+</span>
+      </div>
+      <div class="faq-answer">Send a concise pitch (no more than 200 words) to <a href="mailto:editors@cinderaxisliving.com">editors@cinderaxisliving.com</a>. Include a working title, a short summary, and why it fits our editorial focus.</div>
+    </div>
+  </section>
+
+  <!-- ========== NEWSLETTER ========== -->
+  <section class="container newsletter-section" aria-label="Newsletter signup">
+    <h3>The Cinder Axis Weekly</h3>
+    <p>One thoughtful essay on architecture, interiors, and the spaces we live in. No noise, no spam — just ideas worth your time.</p>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" placeholder="Your email address" aria-label="Email address" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <p style="font-size: 0.8rem; margin-top: 1rem; color: #6b6b6b;">By subscribing you agree to our Privacy Policy.</p>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h5>Cinder Axis Living</h5>
+          <p style="font-size: 0.85rem; color: #aaa; max-width: 240px;">An independent publication about the spaces we inhabit — and the ideas that shape them.</p>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Cinder Axis Living. All rights reserved.</span>
+        <span>Made with care for thoughtful design.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      // ----- Search toggle -----
+      const searchToggle = document.getElementById('searchToggle');
+      const searchInput = document.getElementById('searchInput');
+      if (searchToggle && searchInput) {
+        searchToggle.addEventListener('click', function() {
+          searchInput.classList.toggle('active');
+          if (searchInput.classList.contains('active')) {
+            searchInput.focus();
+          } else {
+            searchInput.value = '';
+          }
+        });
+      }
+
+      // ----- FAQ toggle (contact page) -----
+      const faqQuestions = document.querySelectorAll('.contact-faq .faq-question');
+      faqQuestions.forEach(q => {
+        q.addEventListener('click', function() {
+          const answer = this.nextElementSibling;
+          const isOpen = answer.classList.contains('open');
+          // Close all others
+          document.querySelectorAll('.contact-faq .faq-answer').forEach(a => a.classList.remove('open'));
+          document.querySelectorAll('.contact-faq .faq-question span').forEach(s => s.textContent = '+');
+          if (!isOpen) {
+            answer.classList.add('open');
+            this.querySelector('span').textContent = '−';
+            this.setAttribute('aria-expanded', 'true');
+          } else {
+            this.setAttribute('aria-expanded', 'false');
+          }
+        });
+        q.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.click();
+          }
+        });
+      });
+
+      // ----- Contact form handling -----
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const firstName = document.getElementById('firstName').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const subject = document.getElementById('subject').value;
+          const message = document.getElementById('message').value.trim();
+          if (firstName && email && subject && message) {
+            alert('Thank you, ' + firstName + '. Your message has been sent. We\'ll be in touch soon.');
+            contactForm.reset();
+          } else {
+            alert('Please fill in all required fields.');
+          }
+        });
+      }
+
+      // ----- Newsletter form (prevent actual submit) -----
+      const newsletterForm = document.getElementById('newsletterForm');
+      function handleNewsletter(e) {
+        e.preventDefault();
+        const input = this.querySelector('input[type="email"]');
+        if (input && input.value.trim()) {
+          alert('Thank you for subscribing to Cinder Axis Living. Check your inbox for a welcome note.');
+          input.value = '';
+        }
+      }
+      if (newsletterForm) newsletterForm.addEventListener('submit', handleNewsletter);
+
+      // ----- Smooth scroll for internal links -----
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          const target = document.querySelector(targetId);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
